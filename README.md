@@ -1,6 +1,7 @@
 # Sumobot Jr
-Sumobot Jr is open source robot car kit.
-original https://github.com/makenai/sumobot-jr
+Sumobot Jr is open source robot car kit. <br>
+original https://github.com/makenai/sumobot-jr <br>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="400" />
 
 ### Laser Cutter
 - SumbotJr 3mm
