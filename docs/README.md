@@ -1,4 +1,4 @@
-# Docs3D Printer - Sumobot Jr
+# Docs - Sumobot Jr
 
 ## Parts
 - [Arduino Uno](http://akizukidenshi.com/catalog/g/gM-07385/)
