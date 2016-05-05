@@ -1,15 +1,5 @@
-# Sumobot Jr
-Sumobot Jr is open source robot car kit. <br>
-original https://github.com/makenai/sumobot-jr <br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="400" />
+# Arduino Skech - Sumobot Jr
 
-### Laser Cutter
-- Body : SumbotJr 3mm
-
-## 3D Printer
-- BallCaster
-
-### Arduino Skech
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
 - sumobot command <br/>
@@ -22,6 +12,3 @@ original https://github.com/makenai/sumobot-jr <br>
   test using using digitalWrite <br/>
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
-
-### Docs
-- Assembly
