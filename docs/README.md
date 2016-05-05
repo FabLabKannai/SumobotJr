@@ -12,4 +12,6 @@
 - Some wire or leads
 
 ## Assembly
+Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com/watch?v=0Q3hrKUwxDM)
+
  
