@@ -4,13 +4,13 @@ original https://github.com/makenai/sumobot-jr <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="400" /> <br/>
 Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
   
-### Laser Cutter
+## Laser Cutter
 - Body : SumbotJr 3mm
 
 ## 3D Printer
 - BallCaster
 
-### Arduino Skech
+## Arduino Skech
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
 - sumobot command <br/>
@@ -24,6 +24,9 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
 
-### Docs
+## Docs
 - Parts
 - Assembly
+
+## Blog (Japanese)
+http://android.ohwada.jp/archives/6714
