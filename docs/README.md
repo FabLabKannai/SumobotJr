@@ -6,9 +6,9 @@
 - [4 AA Battery holder](http://akizukidenshi.com/catalog/g/gP-04103/)
 - AA Battery x 4
 - [16mm ball bearing](http://ihc.monotaro.com/item/C38448155/)
-- Zip tie x 2
 - Screws and Nuts : M2.6x10mm x 12、M2.6x15mm x 2
-- Thick rubber bands
+- Zip tie x 2
+- Thick rubber band x 2
 - Some wire or leads
 
 ## Assembly
