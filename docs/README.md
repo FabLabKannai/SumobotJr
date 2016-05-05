@@ -1,0 +1,15 @@
+# Docs3D Printer - Sumobot Jr
+
+## Parts
+- [Arduino Uno](http://akizukidenshi.com/catalog/g/gM-07385/)
+- Continuous servo [SM-S4303R](https://www.pololu.com/product/1248) x 2
+- [4 AA Battery holder](http://akizukidenshi.com/catalog/g/gP-04103/)
+- AA Battery x 4
+- [16mm ball bearing](http://ihc.monotaro.com/item/C38448155/)
+- Zip tie x 2
+- Screws and Nuts
+- Thick rubber bands
+- Some wire or leads
+
+## Assembly
+ 
