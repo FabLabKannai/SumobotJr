@@ -24,4 +24,5 @@ original https://github.com/makenai/sumobot-jr <br>
   clockwide <-> stop <-> anticlockwide <br/>
 
 ### Docs
+- Parts
 - Assembly
