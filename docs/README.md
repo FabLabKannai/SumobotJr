@@ -51,7 +51,11 @@ Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com
 (13) Connect the battery holder and two servos to Arduino <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wiring.jpg" width="300" /> <br/>
 
-(14) Put the battery holder on the body. It is completed. <br/>
+(14) Put on the battery holder on the body .<br/>
+it is good to to put cardboards at the top and bottom of the battery holder.<br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_battery.png" width="300" /> <br/>
+
+(15) It is completed. <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
 
 ## ToDo
