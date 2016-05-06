@@ -14,4 +14,44 @@
 ## Assembly
 Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com/watch?v=0Q3hrKUwxDM)
 
+(1) Enlarge the screw holes of the ball caster <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_hall.jpg" width="300" /> <br/>
+
+(2) Screw the ball caster on the bottom plate <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_caster.jpg" width="300" /> <br/>
+
+(3) Enlarge the screw holes of the servo horns <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn_holl.jpg" width="300" /> <br/>
+
+(4) Screw the servo horns on the wheels <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn.jpg" width="300" /> <br/>
+
+(5) Fix the servos on the bottom plate with zip ties <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn.jpg" width="300" /> <br/>
+
+(6) Screw Arduino on the top plate <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_arduino.jpg" width="300" /> <br/>
+
+(7) Attach the top plate on the body <br/> 
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_upper.jpg" width="300" /> <br/>
+
+(8) Screw the wheels on the body <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wheel.jpg" width="300" /> <br/>
+
+(9) Attach the front plate on the body <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_front.jpg" width="300" /> <br/>
+
+(10) Fit the ball on the ball caster <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_mount.jpg" width="300" /> <br/>
+
+(11) Solder the jumper wires to the battery holder <br/>
+(12) Solder the jumper wires with four connectors <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_soldering.jpg" width="300" /> <br/>
+
+(13) Connect the battery holder and two servos to Arduino <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wiring.jpg" width="300" /> <br/>
+
+(14) Put the battery holder on the body. It is completed. <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_completion.jpg" width="300" /> <br/>
+
  
