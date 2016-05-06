@@ -27,7 +27,7 @@ Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn.jpg" width="300" /> <br/>
 
 (5) Fix the servos on the bottom plate with zip ties <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/servo_mount.jpg" width="300" /> <br/>
 
 (6) Screw Arduino on the top plate <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_arduino.jpg" width="300" /> <br/>
@@ -52,6 +52,4 @@ Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wiring.jpg" width="300" /> <br/>
 
 (14) Put the battery holder on the body. It is completed. <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_completion.jpg" width="300" /> <br/>
-
- 
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
