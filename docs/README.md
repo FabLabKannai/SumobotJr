@@ -53,3 +53,9 @@ Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com
 
 (14) Put the battery holder on the body. It is completed. <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
+
+## ToDo
+- How to fix the rubber band to the wheel <br/>
+It is eazy to remove the rubber band from the wheel <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/todo_wheel_and_rubber.jpg" width="300" /> <br/>
+
