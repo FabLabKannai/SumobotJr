@@ -15,7 +15,7 @@ $ sudo pip install virtualenv <br>
 $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/RaspiStudy/ <br>
-$ mv SumobotJr/raspi/sumobot_deamon/SumobotSample/ ~/RaspiStudy/ <br>
+$ mv SumobotJr/raspi/sumobot_daemon/SumobotSample/ ~/RaspiStudy/ <br>
 
 $ cd ~/RaspiStudy <br>
 $ virtualenv venv <br>
@@ -26,14 +26,14 @@ $ source venv/bin/activate <br>
 (venv) $ python setup.py install <br>
 $ deactivate <br>
 
-you can use service deamon <br>
+you can use service daemon <br>
 $ sudo sh init.sh <br>
 
 ### Run
 $ cd ~<br>
 $ sudo RaspiStudy/venv/bin/sumobot_sample <br>
 
-or service deamon <br>
+or service daemon <br>
 $ sudo /etc/init.d/sumobot-sample start <br>
 
 ### Usage

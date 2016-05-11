@@ -25,7 +25,7 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
   clockwide <-> stop <-> anticlockwide <br/>
 
 ## Raspberry Pi Prgaram
-- Sumobot Controller (deamon) <br/>
+- Sumobot Controller (daemon) <br/>
 Web app to control Sumobot <br/>
 
 ## Docs

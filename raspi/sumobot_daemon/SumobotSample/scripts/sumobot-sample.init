@@ -9,14 +9,14 @@
 # Should-Stop:
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: SUMOBOT daemon
-# Description:       Starts the SUMOBOT daemon with the user specified in
+# Short-Description: Sumobot daemon
+# Description:       Starts the Sumobot daemon with the user specified in
 #                    /etc/default/sumobot-sample.
 ### END INIT INFO
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DESC="SUMOBOT Daemon"
-NAME="SUMOBOT Sample"
+DESC="Sumobot Daemon"
+NAME="Sumobot Sample"
 #DAEMON=/usr/local/bin/sumobot-sample
 PIDFILE=/var/run/sumobot-sample.pid
 PKGNAME=sumobot-sample
