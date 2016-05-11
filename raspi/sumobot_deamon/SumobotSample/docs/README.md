@@ -15,7 +15,7 @@ $ sudo pip install virtualenv <br>
 $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/RaspiStudy/ <br>
-$ cp SumobotJr/raspi/sumobot_deamon/SumobotSample/ ~/RaspiStudy/ <br>
+$ mv SumobotJr/raspi/sumobot_deamon/SumobotSample/ ~/RaspiStudy/ <br>
 
 $ cd ~/RaspiStudy <br>
 $ virtualenv venv <br>
@@ -38,4 +38,4 @@ $ sudo /etc/init.d/sumobot-sample start <br>
 
 ### Usage
 Access using web browser. <br>
-http://IP_ADDR:5020 <br>
+http://IP_ADDR:6010 <br>

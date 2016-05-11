@@ -9,7 +9,7 @@ app = Flask(__name__)
 servo = TwinServo()
 
 # server_run
-def server_run(host, port. pin_left, pin_right):
+def server_run(host, port, pin_left, pin_right):
     app.run(host=str(host), port=int(port))
     servo.setPin(int(pin_left), int(pin_right))
 
