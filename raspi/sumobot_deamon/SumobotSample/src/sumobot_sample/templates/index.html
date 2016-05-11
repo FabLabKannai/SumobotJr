@@ -1,0 +1,35 @@
+<html>
+<!-- 2016-05-01 K.OHWADA @ FabLab Kannai -->
+<head>
+<title>Sumobot</title>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+// post method
+function post(val){
+	var data = {
+		"command": val
+	};
+	$.post("/action", data);
+}
+</script>
+</head>
+<body>
+<h1>Sumobot Controller</h1>
+<!-- post begin -->
+<table>
+<!-- 1st row -->
+<tr><td></td>
+<td><input type="image" src="/static/images/robot_forward.png" onClick="post('f');" /></td>
+<td></td></tr>
+<!-- 2nd row -->
+<tr><td><input type="image" src="/static/images/robot_left.png"  onClick="post('l');" /></td>
+<td><input type="image" src="/static/images/robot_stop.png"  onClick="post('s');" /></td>
+<td><input type="image" src="/static/images/robot_right.png"  onClick="post('r');" /></td></tr>
+<tr><td></td>
+<!-- 3rd row -->
+<td><input type="image" src="/static/images/robot_back.png"  onClick="post('b');" /></td>
+<td></td></tr>
+</table>
+<!-- post end -->
+</body>
+</html>

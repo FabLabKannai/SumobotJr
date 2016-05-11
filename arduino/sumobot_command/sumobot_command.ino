@@ -15,9 +15,9 @@
 
 // Servo
 // SpringRC SM-S4303R
-// 0 : clokckwide full-speed
-// 90 : stop
-// 180 : anticlokckwide full-speed
+//   0 : clokckwide full-speed
+//   90 : stop
+//   180 : anticlokckwide full-speed
 
 // Bluetooth module
 // Microchip RN-42 Bluetooth Evaluation Kit

@@ -24,6 +24,10 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
 
+## Raspberry Pi Prgaram
+- Sumobot Controller (deamon) <br/>
+Web app to control Sumobot <br/>
+
 ## Docs
 - Parts
 - Assembly

@@ -1,0 +1,34 @@
+# Configuration for /etc/init.d/sumobot-sample
+# 2016-05-01 K.OHWADA @ FabLab Kannai
+
+# The init.d script will only run if this variable non-empty.
+SUMOBOT_USER=root
+
+# On what host to run daemon, default is 0.0.0.0
+HOST="0.0.0.0"
+
+# On what port to run daemon, default is 6010
+PORT=6010
+
+# On what left pin to run daemon, default is 15
+PIN_LEFT=15
+
+# On what right pin to run daemon, default is 16
+PIN_RIGHT=16
+
+# Path to the OctoPrint executable, use this to override the default setting "/usr/bin/sumobot-sample"
+#DAEMON=/path/to/sumobot-sample/executable
+DAEMON=/home/pi/RaspiStudy/venv/bin/sumobot_sample
+
+# What arguments to pass to sumobot-sample, usually no need to touch this
+DAEMON_ARGS="--host=$HOST --port=$PORT --pin_left=$PIN_LEFT --pin_right=$PIN_RIGHT"
+
+# Umask of files sumobot-sample generates, Change this to 000 if running sumobot-sample as its own, separate user
+UMASK=022
+
+# Process priority, 0 here will result in a priority 20 process.
+# -2 ensures Octoprint has a slight priority over user processes.
+NICELEVEL=-2
+
+# Should we run at startup?
+START=yes
