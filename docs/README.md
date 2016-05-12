@@ -10,15 +10,14 @@
 - Zip tie x 2
 - Thick rubber band x 2
 - Some wire or leads <br>
-
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_parts.jpg" width="300" /> <br/>
 
 ## Laser Cutter
-- Body 3mm
+- Body 3mm <br>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/laser_cutter_body.jpg" width="300" /> <br/>
 
 ## 3D Printer
-- BallCaster
+- BallCaster <br>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/3d_printer_ball_caster.png" width="300" /><br/>
 
 ## Assembly
