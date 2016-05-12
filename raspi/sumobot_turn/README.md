@@ -28,4 +28,4 @@ insert "python /home/pi/SumobotJr/raspi/sumobot_turn/sumobot_turn_auto.py" befor
 Put a 10k resistor between P18 and P17(3.3V).  <br>
 The program will run endless. <br>
 The program will end soon, when connect to P20(GND) in place of the P17(3.3v).   <br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/raspi_circuit_p18.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/raspi_circuit_p18.png" width="300" /> <br/>
