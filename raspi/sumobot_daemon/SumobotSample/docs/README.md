@@ -2,6 +2,7 @@ Sumobot Controller
 ===============
 
 Web app to control Sumobot <br>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/raspi_completion.jpg" width="300" /> <br/>
 
 ### Requirements
 - OS: Raspbian <br>
