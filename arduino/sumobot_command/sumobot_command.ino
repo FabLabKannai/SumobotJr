@@ -1,7 +1,6 @@
 // Sumobot Command
-// 2016-04-20 K.OHWADA @ FabLab Kannai
+// 2016-04-20 K.OHWADA
 
-// Command specify forward, backward or etc
 // Usage
 // command format : one ASCII charactor
 //   0 : LED off
@@ -15,9 +14,9 @@
 
 // Servo
 // SpringRC SM-S4303R
-//   0 : clokckwide full-speed
-//   90 : stop
-//   180 : anticlokckwide full-speed
+// 0 : clokckwide full-speed
+// 90 : stop
+// 180 : anticlokckwide full-speed
 
 // Bluetooth module
 // Microchip RN-42 Bluetooth Evaluation Kit
@@ -54,6 +53,8 @@ boolean isBlink = true;
 void setup() {
     // serial
     Serial.begin(SERIAL_SPEED);
+    Serial.println("Start sumobot command"); 
+    Serial.println("exsample 'f' for forward"); 
     softSerial.begin(BT_SPEED);
     // servo
     servo_l.attach(P_SERVO_L);
@@ -95,31 +96,40 @@ void command( int c ) {
         // LED off
         isBlink = false;
         digitalWrite(P_LED, LOW); 
+        Serial.println("LED off"); 
     } else if ( c == '1' ) {
         // LED on
         isBlink = false;
         digitalWrite(P_LED, HIGH); 
+        Serial.println("LED on"); 
     } else if ( c == '2' ) {
         // LED blink
         isBlink = true;
+        Serial.println("LED blink"); 
     } else if ( c == 'f' ) {
         // forward
         servo_l.write(180);
         servo_r.write(0);
+        Serial.println("forward"); 
     }  else if ( c == 'b' ) {
         // backward
         servo_l.write(0);
         servo_r.write(180);
+        Serial.println("backward"); 
     }  else if ( c == 'r' ) {
         // right turn
         servo_l.write(180);
         servo_r.write(180);	
+        Serial.println("right"); 
     } else if ( c == 'l' ) {
         // left turn
         servo_l.write(0);
         servo_r.write(0);	 	
+        Serial.println("left"); 
     } else {
+        // atop
         stop();
+        Serial.println("stop"); 
     } 
 }
 // stop
