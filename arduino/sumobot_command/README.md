@@ -14,4 +14,5 @@ command format : one ASCII charactor <br>
 - l : left turn <br>
 - r : right turn <br>
 - othes : stop <br>
+
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/arduino_sumobot_command_monitor.png" width="300" /> <br/>
