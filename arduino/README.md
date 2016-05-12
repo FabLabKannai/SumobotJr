@@ -10,6 +10,8 @@
 - servo command <br/>
   command to specify the rotation direction and speed <br/>
 - servo digitalwrite <br/>
-  test using using digitalWrite <br/>
+  test using digitalWrite <br/>
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
+
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_servo.png" width="300" /> <br/>
