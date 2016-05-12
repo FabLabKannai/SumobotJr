@@ -9,16 +9,17 @@
 - Screws and Nuts : M2.6x10mm x 12、M2.6x15mm x 2
 - Zip tie x 2
 - Thick rubber band x 2
-- Some wire or leads
+- Some wire or leads <br>
+
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_parts.jpg" width="300" /> <br/>
 
 ## Laser Cutter
-- Body : SumbotJr 3mm
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/laser_cutter_body.png" width="300" /> <br/>
+- Body 3mm
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/laser_cutter_body.jpg" width="300" /> <br/>
 
 ## 3D Printer
 - BallCaster
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/imgaes/3d_printer_ball_caster.png" width="300" /><br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/3d_printer_ball_caster.png" width="300" /><br/>
 
 ## Assembly
 Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com/watch?v=0Q3hrKUwxDM)
