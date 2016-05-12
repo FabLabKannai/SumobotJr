@@ -54,7 +54,7 @@ Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_ball_mount.jpg" width="300" /> <br/>
 
 ### Wiring
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/circuit.png" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/circuit.png" width="300" /> <br/>
 
 (11) Solder the jumper wires to the battery holder <br/>
 (12) Solder the jumper wires with four connectors <br/>
