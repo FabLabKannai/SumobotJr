@@ -2,6 +2,7 @@
 
 Test for Sumobot using continuous rotation servos <br>
 Command specify forward, backward or etc <br>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
 
 ### Usage
 command format : one ASCII charactor <br>

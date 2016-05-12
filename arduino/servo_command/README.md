@@ -2,6 +2,7 @@
 
 Test for Continuous Rotation Servo <br/>
 Command specify forward, backward or etc <br>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_servo.png" width="300" /> <br/>
 
 ### Usage
 format : s + three digits <br>
