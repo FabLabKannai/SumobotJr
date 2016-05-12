@@ -1,7 +1,7 @@
 # Sumobot Jr
 Sumobot Jr is open source robot car kit. <br/>
 original https://github.com/makenai/sumobot-jr <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="400" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="400" /> <br/>
 Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
   
 ## Laser Cutter
@@ -26,7 +26,7 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 
 ## Raspberry Pi Prgaram
 - Sumobot Controller (daemon) <br/>
-Web app to control Sumobot <br/>
+  Web app to control Sumobot <br/>
 
 ## Docs
 - Parts

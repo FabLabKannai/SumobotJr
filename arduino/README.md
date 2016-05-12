@@ -14,7 +14,7 @@
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
 
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="300" /> <br/>
 
 ### blog (Japanese)
 http://android.ohwada.jp/archives/6674

@@ -10,59 +10,67 @@
 - Zip tie x 2
 - Thick rubber band x 2
 - Some wire or leads
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_parts.jpg" width="300" /> <br/>
+
+## Laser Cutter
+- Body : SumbotJr 3mm
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/laser_cutter_body.png" width="300" /> <br/>
+
+## 3D Printer
+- BallCaster
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/imgaes/3d_printer_ball_caster.png" width="300" /><br/>
 
 ## Assembly
 Video: [Sumobot Jr Assembly video for Nodebots Day 7/27](https://www.youtube.com/watch?v=0Q3hrKUwxDM)
 
 (1) Enlarge the screw holes of the ball caster <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_hall.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_ball_hall.jpg" width="300" /> <br/>
 
 (2) Screw the ball caster on the bottom plate <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_caster.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_ball_caster.jpg" width="300" /> <br/>
 
 (3) Enlarge the screw holes of the servo horns <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn_holl.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_servo_horn_holl.jpg" width="300" /> <br/>
 
 (4) Screw the servo horns on the wheels <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_servo_horn.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_servo_horn.jpg" width="300" /> <br/>
 
 (5) Fix the servos on the bottom plate with zip ties <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/servo_mount.jpg" width="300" /> <br/>
 
 (6) Screw Arduino on the top plate <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_arduino.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_arduino.jpg" width="300" /> <br/>
 
 (7) Attach the top plate on the body <br/> 
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_upper.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_upper.jpg" width="300" /> <br/>
 
 (8) Screw the wheels on the body <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wheel.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_wheel.jpg" width="300" /> <br/>
 
 (9) Attach the front plate on the body <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_front.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_front.jpg" width="300" /> <br/>
 
 (10) Fit the ball on the ball caster <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_ball_mount.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_ball_mount.jpg" width="300" /> <br/>
 
 ### Wiring
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/circuit.png" width="300" /> <br/>
 
 (11) Solder the jumper wires to the battery holder <br/>
 (12) Solder the jumper wires with four connectors <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_soldering.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_soldering.jpg" width="300" /> <br/>
 
 (13) Connect the battery holder and two servos to Arduino <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_wiring.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_wiring.jpg" width="300" /> <br/>
 
 (14) Put on the battery holder on the body .<br/>
 it is good to to put cardboards at the top and bottom of the battery holder.<br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/asm_battery.png" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/asm_battery.png" width="300" /> <br/>
 
 (15) It is completed. <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/completion.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="300" /> <br/>
 
 ## ToDo
 - How to fix the rubber band to the wheel <br/>
 It is eazy to remove the rubber band from the wheel <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/todo_wheel_and_rubber.jpg" width="300" /> <br/>
-
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/asm/todo_wheel_and_rubber.jpg" width="300" /> <br/>
