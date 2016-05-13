@@ -21,6 +21,7 @@ $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/RaspiStudy/ <br>
 $ mv SumobotJr/raspi/sumobot_turn/ ~/RaspiStudy/ <br>
 
+### Auto Start 1
 Set to start this program, when the power is turned on. <br>
 Change /etc/rc.local <br>
 Add one line before "exit 0" <br>
@@ -29,6 +30,12 @@ Add one line before "exit 0" <br>
 ... <br>
 python /home/pi/RaspiStudy/sumobot_turn/sumobot_turn_check.py <br>
 exit 0  <br>
+
+### Auto Start 2
+Alternative to change /etc/rc.local<br>
+
+$ cd /tmp/SumobotJr/raspi/sumobot_turn/ <br>
+$ sudo sh rc,sh
 
 ### Hardwear setup
 Put a 10k resistor between P18 and P17(3.3V).  <br>
