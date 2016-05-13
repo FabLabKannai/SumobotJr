@@ -5,7 +5,7 @@
 ## Skechs
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
-  Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
+  Video [Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 - sumobot command <br/>
   command specify forward, backward or etc
 - servo class <br/>

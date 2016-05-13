@@ -42,6 +42,12 @@ it is good to to put cardboards at the top and bottom of the portable battery ch
 And connect the portable battery charger to Raspberry Pi <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_battery_wire.jpg" width="300" /> <br/>
 
+## Program
+Set the program [sumobot turn](https://github.com/FabLabKannai/SumobotJr/tree/master/raspi/sumobot_turn) to Raspberry Pi.<br/>
+Turn on the power.<br/>
+Sumobot is repeating the left turn and right turn. <br/>
+like video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
+
 ## ToDo
 The spacer is NOT enough 3mm thick. <br/>
 Need about 10mm thick. <br/>

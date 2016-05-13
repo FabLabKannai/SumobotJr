@@ -7,7 +7,7 @@
 Web app to control Sumobot <br/>
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
-  Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
+  Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 - sumobot command <br/>
   command specify forward, backward or etc <br/>
 - servo duty <br/>

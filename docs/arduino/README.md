@@ -4,6 +4,7 @@ This document for Arduino version <br>
 [see Raspberry Pi version](https://github.com/FabLabKannai/SumobotJr/tree/master/docs/raspi/) <br>
 
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_ver.jpg" width="300" /> <br/>
+Video [Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 
 ## Parts
 - [Arduino Uno](http://akizukidenshi.com/catalog/g/gM-07385/)
@@ -74,6 +75,12 @@ it is good to to put cardboards at the top and bottom of the battery holder.<br/
 
 (15) It is completed. <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_ver.jpg" width="300" /> <br/>
+
+## Program
+Set the skech [sumobot turn](https://github.com/FabLabKannai/SumobotJr/tree/master/arduino/sumobot_turn) to Arduino.<br/>
+Turn on the power.<br/>
+Sumobot is repeating the left turn and right turn. <br/>
+like video [Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/> <br/>
 
 ## ToDo
 - How to fix the rubber band to the wheel <br/>

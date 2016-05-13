@@ -2,7 +2,7 @@
 
 Test for Sumobot using  continuous rotation servos <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
-  Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
+Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 
 ## Program
 - sumobot turn <br/>
