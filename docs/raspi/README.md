@@ -1,9 +1,10 @@
 # Raspberry Pi version - Sumobot Jr
 
 This document for Raspberry Pi version <br>
-[Arduino version](https://github.com/FabLabKannai/SumobotJr/tree/master/docs/)
+[see Arduino version](https://github.com/FabLabKannai/SumobotJr/tree/master/docs/)
 
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_completion.jpg" width="300" /> <br/>
+Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 
 ## Parts
 - [Raspberry Pi 2 B](https://www.switch-science.com/catalog/2127/)

@@ -1,7 +1,7 @@
 # Arduino version - Sumobot Jr
 
 This document for Arduino version <br>
-[RasPi version](https://github.com/FabLabKannai/SumobotJr/tree/master/docs/raspi/) <br>
+[see Raspberry Pi version](https://github.com/FabLabKannai/SumobotJr/tree/master/docs/raspi/) <br>
 
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="300" /> <br/>
 
