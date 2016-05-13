@@ -32,7 +32,17 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 
 ### Raspberry Pi Prgaram
 - Sumobot Controller (daemon) <br/>
-  Web app to control Sumobot <br/>
+Web app to control Sumobot <br/>
+- sumobot turn <br/>
+  reft turn <-> stop <-> right turn <br/>
+- sumobot command <br/>
+  command specify forward, backward or etc <br/>
+- servo duty <br/>
+  command specify duty <br/>
+- servo speed <br/>
+  command specify speed <br/>
+- servo fade <br/>
+  clockwide <-> stop <-> anticlockwide <br/>
 
 ### Docs
 - Parts

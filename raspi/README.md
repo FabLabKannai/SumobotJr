@@ -3,7 +3,7 @@
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ## Prgarams
-- Sumobot Controller (deamon) <br/>
+- Sumobot Controller (daemon) <br/>
 Web app to control Sumobot <br/>
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
