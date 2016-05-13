@@ -61,7 +61,7 @@ class ServoSpeed():
 
 # main
 PIN = 15
-OFFSET = -20.0	
+OFFSET = -15.0	
 speed = 0
 amount = 5
 servo = ServoSpeed(PIN)

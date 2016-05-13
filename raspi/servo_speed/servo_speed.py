@@ -66,7 +66,7 @@ class ServoSpeed():
 
 # main
 PIN = 15
-OFFSET = -20
+OFFSET = -15.0
 servo = ServoSpeed(PIN)
 servo.setDebugPrint(True)
 servo.setOffset(OFFSET)

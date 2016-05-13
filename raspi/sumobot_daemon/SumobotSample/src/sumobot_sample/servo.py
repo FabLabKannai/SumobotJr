@@ -15,8 +15,8 @@ import RPi.GPIO as GPIO
 #   othes : stop
 #
 class TwinServo():
-	OFFSET_L = -20.0
-	OFFSET_R = -20.0	
+	OFFSET_L = -15.0
+	OFFSET_R = -15.0	
 	servo_l = None
 	servo_r = None
 
