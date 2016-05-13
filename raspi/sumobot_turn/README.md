@@ -27,12 +27,11 @@ Add one line before "exit 0" <br>
 
 > $ sudo nano /etc/rc.local <br>
 ... <br>
-# add <br>
 python /home/pi/SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py <br>
 exit 0  <br>
 
 ### Hardwear setup
 Put a 10k resistor between P18 and P17(3.3V).  <br>
-The program will run endless. <br>
-The program will end soon, when connect to P20(GND) in place of the P17(3.3v).   <br>
+Sumobot will run endless. <br>
+Sumobot will be stopped, when connect to P20(GND) in place of the P17(3.3v).   <br>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_circuit_p18.png" width="300" /> <br/>
