@@ -27,7 +27,7 @@ Add one line before "exit 0" <br>
 
 > $ sudo nano /etc/rc.local <br>
 ... <br>
-python /home/pi/SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py <br>
+python /home/pi/RaspiStudy/sumobot_turn/sumobot_turn_check.py <br>
 exit 0  <br>
 
 ### Hardwear setup

@@ -58,14 +58,15 @@ class ServoSpeed():
 		if speed < self.MIN_SPEED: speed = self.MIN_SPEED
 		if speed > self.MAX_SPEED: speed = self.MAX_SPEED
 		duty = self.DUTY_STOP + self.dutyOffset + self.COEF * speed
-		if self.debugPrint: print duty
+		if self.debugPrint: 
+			print str(speed) + " -> " + str(duty)
 		return duty
-		
+
 # end of class
 
 # main
 PIN = 15
-OFFSET = 0
+OFFSET = -20
 servo = ServoSpeed(PIN)
 servo.setDebugPrint(True)
 servo.setOffset(OFFSET)
