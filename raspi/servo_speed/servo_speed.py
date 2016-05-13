@@ -30,13 +30,17 @@ class ServoSpeed():
 		GPIO.setmode(GPIO.BOARD)
 		self.pin = int(pin)
 		GPIO.setup(self.pin, GPIO.OUT)
+		if self.debugPrint: 
+			print "start  ServoSpeed"
 
 	def setDebugPrint(self, debug):
 		self.debugPrint = bool(debug)
 
 	def setOffset(self, offset):
 		self.dutyOffset = self.COEF * float(offset)
-
+		if self.debugPrint: 
+			print "offset; " + str(offset) + " -> " + str(self.dutyOffset)
+ 
 	def start(self):
 		self.servo = GPIO.PWM(self.pin, self.FREQ)
 		duty = self.calcDuty(0)
