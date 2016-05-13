@@ -30,8 +30,6 @@ class ServoSpeed():
 		GPIO.setmode(GPIO.BOARD)
 		self.pin = int(pin)
 		GPIO.setup(self.pin, GPIO.OUT)
-		if self.debugPrint: 
-			print "start  ServoSpeed"
 
 	def setDebugPrint(self, debug):
 		self.debugPrint = bool(debug)
@@ -69,10 +67,12 @@ class ServoSpeed():
 # end of class
 
 # main
+print "start  ServoSpeed"
 PIN = 15
 OFFSET = -15.0
+DEBUG = False
 servo = ServoSpeed(PIN)
-servo.setDebugPrint(True)
+servo.setDebugPrint(DEBUG)
 servo.setOffset(OFFSET)
 servo.start()
 
