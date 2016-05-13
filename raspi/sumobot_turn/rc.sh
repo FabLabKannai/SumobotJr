@@ -1,10 +1,7 @@
 #!/bin/sh
-# Sumobot init
+# change /etc/rc.local
 # 2016-05-01 K.OHWADA @ FabLab Kannai
 
-cp scripts/sumobot-sample.init /etc/init.d/sumobot-sample
-chmod 755 /etc/init.d/sumobot-sample
-cp scripts/sumobot-sample.default /etc/default/sumobot-sample
-chmod 644 /etc/default/sumobot-sample
-insserv sumobot-sample
-systemctl daemon-reload
+cp -p /etc/rc.local /etc/rc.local.orig
+cp -f sumobot_turn.rc.local /etc/rc.local
+chmod 755 /etc/rc.local
