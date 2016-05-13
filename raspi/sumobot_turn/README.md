@@ -35,7 +35,7 @@ exit 0  <br>
 Alternative to change /etc/rc.local<br>
 
 $ cd /tmp/SumobotJr/raspi/sumobot_turn/ <br>
-$ sudo sh rc,sh
+$ sudo sh rc.sh
 
 ### Hardwear setup
 Put a 10k resistor between P18 and P17(3.3V).  <br>
