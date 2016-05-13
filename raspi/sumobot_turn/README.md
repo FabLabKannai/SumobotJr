@@ -18,8 +18,8 @@ clockwide <-> stop <-> anticlockwide <br/>
 ### Install
 $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
-$ mkdir ~/RaspiStudy/ <br>
-$ mv SumobotJr/raspi/sumobot_turn/ ~/RaspiStudy/ <br>
+$ mkdir ~/sumobot/ <br>
+$ cp SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py ~/sumobot/ <br>
 
 ### Auto Start 1
 Set to start this program, when the power is turned on. <br>
@@ -28,7 +28,7 @@ Add one line before "exit 0" <br>
 
 > $ sudo nano /etc/rc.local <br>
 ... <br>
-python /home/pi/RaspiStudy/sumobot_turn/sumobot_turn_check.py <br>
+python /home/pi/sumobot/sumobot_turn_check.py <br>
 exit 0  <br>
 
 ### Auto Start 2

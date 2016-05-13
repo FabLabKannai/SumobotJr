@@ -18,6 +18,6 @@ if [ "$_IP" ]; then
 fi
 
 # 2016-05-01
-python /home/pi/RaspiStudy/sumobot_turn/sumobot_turn_check.py
+python /home/pi/sumobot/sumobot_turn_check.py
 
 exit 0
