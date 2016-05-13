@@ -28,7 +28,7 @@ Add one line before "exit 0" <br>
 
 > $ sudo nano /etc/rc.local <br>
 ... <br>
-\# add
+\# add <br/>
 python /home/pi/sumobot/sumobot_turn_check.py <br>
 exit 0  <br>
 
