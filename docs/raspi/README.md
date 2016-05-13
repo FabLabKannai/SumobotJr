@@ -17,11 +17,11 @@ Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 
 ## Laser Cutter
 - Body 3mm - same as Arduino version<br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/laser_cutter_body.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/laser_cutter_body.jpg" width="300" /> <br/>
 
 ## 3D Printer
 - BallCaster - same as Arduino version <br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/3d_printer_ball_caster.png" width="300" /><br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/3d_printer_ball_caster.png" width="300" /><br/>
 
 ## Assembly
 Assembly is almost the same as the Arduino version. <br/>
@@ -51,3 +51,6 @@ Need about 10mm thick. <br/>
 
 - Can NOT insert the battery cable to Raspberry Pi, becase the side plate is in the way. <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_problem_2.png" width="300" /> <br/>
+
+### Blog (Japanese)
+http://android.ohwada.jp/archives/6789

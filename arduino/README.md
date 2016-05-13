@@ -1,5 +1,7 @@
 # Arduino Skech - Sumobot Jr
 
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_ver.jpg" width="300" /> <br/>
+
 ## Skechs
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
@@ -14,8 +16,6 @@
   test using digitalWrite <br/>
 - servo fade <br/>
   clockwide <-> stop <-> anticlockwide <br/>
-
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="300" /> <br/>
 
 ### blog (Japanese)
 http://android.ohwada.jp/archives/6674

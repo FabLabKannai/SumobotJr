@@ -2,7 +2,7 @@
 
 Test for Continuous Rotation Servo <br/>
 Command specify speed <br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/raspi_servo.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_servo.jpg" width="300" /> <br/>
 
 ### Usage
 format : digits <br>

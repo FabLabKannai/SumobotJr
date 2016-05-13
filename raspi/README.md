@@ -1,5 +1,7 @@
 # Raspberry Pi Prgaram - Sumobot Jr
 
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
+
 ## Prgarams
 - Sumobot Controller (deamon) <br/>
 Web app to control Sumobot <br/>

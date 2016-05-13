@@ -3,13 +3,13 @@ Sumobot Jr is open source robot car kit. <br/>
 original https://github.com/makenai/sumobot-jr <br/>
 
 ## Arduino version
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="400" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_ver.jpg" width="400" /> <br/>
 Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=96kZ15I-gVY) <br/>
 
 ## Raspberry Pi version
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_completion.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 Video [20160501 Sumobot Jr](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
-  
+
 ### Laser Cutter
 - Body : SumbotJr 3mm
 

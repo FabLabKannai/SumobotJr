@@ -2,7 +2,7 @@
 
 Test for Sumobot using continuous rotation servos <br>
 Command specify forward, backward or etc <br>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/completion.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino_ver.jpg" width="300" /> <br/>
 
 ### Usage
 command format : one ASCII charactor <br>
@@ -15,4 +15,4 @@ command format : one ASCII charactor <br>
 - r : right turn <br>
 - othes : stop <br>
 
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/arduino_sumobot_command_monitor.png" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/arduino/arduino_sumobot_command_monitor.png" width="300" /> <br/>

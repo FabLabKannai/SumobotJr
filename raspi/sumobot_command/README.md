@@ -1,7 +1,7 @@
 # sumobot command - RasPi Program
 
 Test for Sumobot using  continuous rotation servos <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/images/raspi_completion.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ### Usage
 command format : one ASCII charactor <br>
