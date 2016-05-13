@@ -67,9 +67,9 @@ class ServoSpeed():
 # end of class
 
 # main
-print "start  ServoSpeed"
+print "start ServoSpeed"
 PIN = 15
-OFFSET = -15.0
+OFFSET = -18.0
 DEBUG = False
 servo = ServoSpeed(PIN)
 servo.setDebugPrint(DEBUG)

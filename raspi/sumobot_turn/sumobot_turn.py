@@ -11,8 +11,8 @@ import RPi.GPIO as GPIO
 # TwinServo class
 #
 class TwinServo():
-	OFFSET_L = -15.0
-	OFFSET_R = -15.0	
+	OFFSET_L = -18.0
+	OFFSET_R = -18.0	
 	servo_l = None
 	servo_r = None
 
