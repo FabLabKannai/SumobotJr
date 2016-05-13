@@ -7,8 +7,10 @@ Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <
 ## Program
 - sumobot turn <br/>
 Sumobot run immediately, when the program is started. <br/>
-- sumobot turn auto <br/>
-Sumobot run, after check the state of P18 pin, when the program is started. <br/>
+- sumobot turn check <br/>
+Program starts, and it checks the state of the P18.. <br/>
+Sumobot run, if P18 is high. <br/>
+Program stop, and Sumobot is stopped, if P18 is low. <br/>
 
 ### Behavior
 clockwide <-> stop <-> anticlockwide <br/>
@@ -21,8 +23,13 @@ $ mv SumobotJr/raspi/sumobot_turn/ ~/RaspiStudy/ <br>
 
 Set to start this program, when the power is turned on. <br>
 Change /etc/rc.local <br>
-$ sudo nano /etc/rc.local <br>
-insert "python /home/pi/SumobotJr/raspi/sumobot_turn/sumobot_turn_auto.py" before "exit 0" <br>
+Add one line before "exit 0" <br>
+
+> $ sudo nano /etc/rc.local <br>
+... <br>
+# add <br>
+python /home/pi/SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py <br>
+exit 0  <br>
 
 ### Hardwear setup
 Put a 10k resistor between P18 and P17(3.3V).  <br>
