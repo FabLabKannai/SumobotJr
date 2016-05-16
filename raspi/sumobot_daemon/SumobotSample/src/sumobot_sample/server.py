@@ -14,7 +14,7 @@ def server_run(host, port, pin_left, pin_right):
     servo.setPin(int(pin_left), int(pin_right))
     # always last
     app.run(host=str(host), port=int(port))
-    
+
 # route index
 @app.route('/')
 def show_index():

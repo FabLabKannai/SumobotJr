@@ -13,29 +13,32 @@ $ sudo apt-get install python-dev <br>
 $ sudo pip install virtualenv <br>
 
 ### Install
-$ cd /tmp<br>
+> $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/RaspiStudy/ <br>
 $ mv SumobotJr/raspi/sumobot_daemon/SumobotSample/ ~/RaspiStudy/ <br>
 
-$ cd ~/RaspiStudy <br>
+> $ cd ~/RaspiStudy <br>
 $ virtualenv venv <br>
 ( You do not need to excute this command more than once, if you excuted this at once. ) <br>
 
-$ source venv/bin/activate <br>
+> $ source venv/bin/activate <br>
 (venv) $ cd SumobotSample <br>
 (venv) $ python setup.py install <br>
 $ deactivate <br>
 
 you can use service daemon <br>
-$ sudo sh init.sh <br>
+> $ sudo sh init.sh <br>
 
 ### Run
-$ cd ~<br>
+> $ cd ~<br>
 $ sudo RaspiStudy/venv/bin/sumobot_sample <br>
 
 or service daemon <br>
-$ sudo /etc/init.d/sumobot-sample start <br>
+> $ sudo /etc/init.d/sumobot-sample start <br>
+
+### Quite service daemon
+> $ sudo insserv -r sumobot-sample
 
 ### Usage
 Access using web browser. <br>

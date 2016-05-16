@@ -8,18 +8,21 @@ import RPi.GPIO as GPIO
 # TwinServo class
 #
 # Usage
+#    w : wakeup
+#    q : quit
 #    f : forward
 #    b : backward
 #    l : left turn
 #    r : right turn
-#   othes : stop
+#    othes : stop
 #
 class TwinServo():
 	OFFSET_L = -18.0
 	OFFSET_R = -18.0	
 	servo_l = None
 	servo_r = None
-
+	status = False
+	
 	def __init__(self):
 		self.servo_l = ServoSpeed()
 		self.servo_r = ServoSpeed()
@@ -27,19 +30,37 @@ class TwinServo():
 		self.servo_r.setOffset(self.OFFSET_R)
 
 	def setPin(self, pin_l, pin_r):
-		self.servo_l.setPinMode()
-#		self.servo_r.setPinMode()
 		self.servo_l.setPin(pin_l)
 		self.servo_r.setPin(pin_r)		
+
+	def wakeup(self):
+		if self.status: return
+		self.status = True
+		self.servo_l.setPinMode()
+#		self.servo_r.setPinMode()
 		self.servo_l.start()
 		self.servo_r.start()
 
+	def quit(self):
+		self.status = False
+		self.servo_l.stop()
+		self.servo_r.stop()
+		self.servo_l.cleanupGpio()
+#		self.servo_r.cleanupGpio()
+
 	def change(self, speed_l, speed_r):
+		if not self.status: return
 		self.servo_l.change(speed_l)
 		self.servo_r.change(speed_r)
 
 	def command(self, c):
-		if c == 'f':
+		if c == 'w':
+			print 'wakeup'
+			self.wakeup()
+		elif c == 'q':
+			print 'quit'
+			self.quit()				
+		elif c == 'f':
 			print 'forward'
 			self.change(100, -100)
 		elif c == 'b':
@@ -54,12 +75,6 @@ class TwinServo():
 		else:
 			print 'stop'
 			self.change(0, 0)
-
-	def stop(self):
-		self.servo_l.stop()
-		self.servo_r.stop()
-		self.servo_l.cleanupGpio()
-#		self.servo_r.cleanupGpio()
 							
 # end of class
 
@@ -92,14 +107,14 @@ class ServoSpeed():
 	def setOffset(self, offset):
 		self.dutyOffset = self.COEF * float(offset)
 
+	def setPin(self, pin):
+		self.pin = int(pin)
+
 	def setPinMode(self):
 		GPIO.setmode(GPIO.BOARD)
 
-	def setPin(self, pin):
-		self.pin = int(pin)
-		GPIO.setup(self.pin, GPIO.OUT)
-
 	def start(self):
+		GPIO.setup(self.pin, GPIO.OUT)
 		self.servo = GPIO.PWM(self.pin, self.FREQ)
 		duty = self.calcDuty(0)
 		self.servo.start(duty)
@@ -109,7 +124,7 @@ class ServoSpeed():
 
 	def cleanupGpio(self):
 		GPIO.cleanup()
-		
+	
 	def change(self, speed):
 		duty = self.calcDuty(speed)
 		self.servo.ChangeDutyCycle(duty)

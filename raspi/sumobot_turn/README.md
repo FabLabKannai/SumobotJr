@@ -16,7 +16,7 @@ Program stop, and Sumobot is stopped, if P18 is low. <br/>
 clockwide <-> stop <-> anticlockwide <br/>
 
 ### Install
-$ cd /tmp<br>
+> $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/sumobot/ <br>
 $ cp SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py ~/sumobot/ <br>
@@ -26,7 +26,8 @@ Set to start this program, when the power is turned on. <br>
 Change /etc/rc.local <br>
 Add one line before "exit 0" <br>
 
-> $ sudo nano /etc/rc.local <br>
+> $ sudo cp -p /etc/rc.local /etc/rc.local.orig <br>
+$ sudo nano /etc/rc.local <br>
 ... <br>
 \# add <br/>
 python /home/pi/sumobot/sumobot_turn_check.py <br>
@@ -35,8 +36,13 @@ exit 0  <br>
 ### Auto Start 2
 Alternative to change /etc/rc.local<br>
 
-$ cd /tmp/SumobotJr/raspi/sumobot_turn/ <br>
-$ sudo sh rc.sh
+> $ cd /tmp/SumobotJr/raspi/sumobot_turn/ <br>
+$ sudo cp -p /etc/rc.local /etc/rc.local.orig <br>
+$ sudo cp -f rc.local.sumobot_turn /etc/rc.local <br>
+$ sudo chmod 755 /etc/rc.local <br>
+
+### Auto Start 2
+> $ sudo cp /etc/rc.local.orig /etc/rc.local
 
 ### Hardwear setup
 Put a 10k resistor between P18 and P17(3.3V).  <br>
