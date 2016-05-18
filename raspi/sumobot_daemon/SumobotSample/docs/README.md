@@ -15,10 +15,10 @@ $ sudo pip install virtualenv <br>
 ### Install
 > $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
-$ mkdir ~/RaspiStudy/ <br>
-$ mv SumobotJr/raspi/sumobot_daemon/SumobotSample/ ~/RaspiStudy/ <br>
+$ mkdir ~/sumobot/ <br>
+$ mv SumobotJr/raspi/sumobot_daemon/SumobotSample/ ~/sumobot/ <br>
 
-> $ cd ~/RaspiStudy <br>
+> $ cd ~/sumobot <br>
 $ virtualenv venv <br>
 ( You do not need to excute this command more than once, if you excuted this at once. ) <br>
 
@@ -32,7 +32,7 @@ you can use service daemon <br>
 
 ### Run
 > $ cd ~<br>
-$ sudo RaspiStudy/venv/bin/sumobot_sample <br>
+$ sudo sumobot/venv/bin/sumobot_sample <br>
 
 or service daemon <br>
 > $ sudo /etc/init.d/sumobot-sample start <br>
