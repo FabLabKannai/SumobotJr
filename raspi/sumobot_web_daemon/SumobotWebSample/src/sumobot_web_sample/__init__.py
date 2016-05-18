@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Sumobot main
+# Sumobot Web Sample main
 # 2016-05-01 K.OHWADA @ FabLab Kannai
 
 import sys

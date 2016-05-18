@@ -17,6 +17,8 @@ Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <
 - BallCaster
 
 ### Arduino Skech
+- sumobot web daemon<br/>
+  web app to control Sumobot <br/>
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
 - sumobot command <br/>

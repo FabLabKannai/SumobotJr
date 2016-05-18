@@ -3,8 +3,8 @@
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ## Prgarams
-- Sumobot Controller (daemon) <br/>
-Web app to control Sumobot <br/>
+- sumobot web daemon <br/>
+  web app to control Sumobot <br/>
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
   Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# SUMOBOT setup
+# Sumobot Web Sample setup
 # 2016-05-01 K.OHWADA @ FabLab Kannai
 
 from setuptools import setup, find_packages
@@ -28,7 +28,7 @@ EXTRA_REQUIRES = dict()
 
 # general setup configuration
 def params():
-    name ="SumobotSample"
+    name ="SumobotWebSample"
     version ="0.1"
     description ="Sumobot Controller for Raspberry Pi 2"
 
@@ -66,7 +66,7 @@ def params():
        "":"src"
     }
     package_data = {
-       "sumobot_sample": sumobot_setuptools.package_data_dirs("src/sumobot_sample", ["static", "templates"])
+       "sumobot_web_sample": sumobot_setuptools.package_data_dirs("src/sumobot_web_sample", ["static", "templates"])
     }
 
     include_package_data = True
@@ -80,7 +80,7 @@ def params():
 
     entry_points = {
         "console_scripts": [
-            "sumobot_sample = sumobot_sample:main"
+            "sumobot_web_sample = sumobot_web_sample:main"
         ]
     }
 

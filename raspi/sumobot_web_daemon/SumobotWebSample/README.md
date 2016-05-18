@@ -1,4 +1,4 @@
-Sumobot Controller
+Sumobot Web Daemon
 ===============
 
 Web app to control Sumobot <br>
@@ -16,14 +16,14 @@ $ sudo pip install virtualenv <br>
 > $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/sumobot/ <br>
-$ mv SumobotJr/raspi/sumobot_daemon/SumobotSample/ ~/sumobot/ <br>
+$ mv SumobotJr/raspi/sumobot_web_daemon/SumobotWebSample/ ~/sumobot/ <br>
 
 > $ cd ~/sumobot <br>
 $ virtualenv venv <br>
 ( You do not need to excute this command more than once, if you excuted this at once. ) <br>
 
 > $ source venv/bin/activate <br>
-(venv) $ cd SumobotSample <br>
+(venv) $ cd SumobotWebSample <br>
 (venv) $ python setup.py install <br>
 $ deactivate <br>
 
@@ -32,13 +32,13 @@ you can use service daemon <br>
 
 ### Run
 > $ cd ~<br>
-$ sudo sumobot/venv/bin/sumobot_sample <br>
+$ sudo sumobot/venv/bin/sumobot_web_sample <br>
 
 or service daemon <br>
-> $ sudo /etc/init.d/sumobot-sample start <br>
+> $ sudo /etc/init.d/sumobot-web-sample start <br>
 
 ### Quite service daemon
-> $ sudo insserv -r sumobot-sample
+> $ sudo insserv -r sumobot-web-sample
 
 ### Usage
 Access using web browser. <br>
