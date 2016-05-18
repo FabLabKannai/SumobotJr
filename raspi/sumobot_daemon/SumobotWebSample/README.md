@@ -16,7 +16,7 @@ $ sudo pip install virtualenv <br>
 > $ cd /tmp<br>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/sumobot/ <br>
-$ mv SumobotJr/raspi/sumobot_web_daemon/SumobotWebSample/ ~/sumobot/ <br>
+$ mv SumobotJr/raspi/sumobot_daemon/SumobotWebSample/ ~/sumobot/ <br>
 
 > $ cd ~/sumobot <br>
 $ virtualenv venv <br>
