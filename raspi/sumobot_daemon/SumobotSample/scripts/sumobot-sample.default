@@ -18,7 +18,7 @@ PIN_RIGHT=16
 
 # Path to the OctoPrint executable, use this to override the default setting "/usr/bin/sumobot-sample"
 #DAEMON=/path/to/sumobot-sample/executable
-DAEMON=/home/pi/RaspiStudy/venv/bin/sumobot_sample
+DAEMON=/home/pi/sumobot/venv/bin/sumobot_sample
 
 # What arguments to pass to sumobot-sample, usually no need to touch this
 DAEMON_ARGS="--host=$HOST --port=$PORT --pin_left=$PIN_LEFT --pin_right=$PIN_RIGHT"
