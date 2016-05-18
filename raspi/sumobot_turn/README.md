@@ -21,11 +21,10 @@ $ git clone https://github.com/FabLabKannai/SumobotJr.git <br>
 $ mkdir ~/sumobot/ <br>
 $ cp SumobotJr/raspi/sumobot_turn/sumobot_turn_check.py ~/sumobot/ <br>
 
-### Auto Start 1
+### Start Automatically 1
 Set to start this program, when the power is turned on. <br>
 Change /etc/rc.local <br>
 Add one line before "exit 0" <br>
-
 > $ sudo cp -p /etc/rc.local /etc/rc.local.orig <br>
 $ sudo nano /etc/rc.local <br>
 ... <br>
@@ -33,15 +32,15 @@ $ sudo nano /etc/rc.local <br>
 python /home/pi/sumobot/sumobot_turn_check.py <br>
 exit 0  <br>
 
-### Auto Start 2
-Alternative to change /etc/rc.local<br>
-
+### Start Automatically 2
+Alternative to change /etc/rc.local <br>
 > $ cd /tmp/SumobotJr/raspi/sumobot_turn/ <br>
 $ sudo cp -p /etc/rc.local /etc/rc.local.orig <br>
 $ sudo cp -f rc.local.sumobot_turn /etc/rc.local <br>
 $ sudo chmod 755 /etc/rc.local <br>
 
-### Auto Start 2
+### Quit to start automatically
+Revert to the original /etc/rc.local
 > $ sudo cp /etc/rc.local.orig /etc/rc.local
 
 ### Hardwear setup
