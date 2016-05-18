@@ -1,4 +1,4 @@
-Sumobot Web Daemon
+Sumobot Web Sample
 ===============
 
 Web app to control Sumobot <br>
