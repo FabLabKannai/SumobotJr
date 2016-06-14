@@ -25,7 +25,7 @@ $ virtualenv venv <br/>
 > $ source venv/bin/activate <br/>
 (venv) $ cd SumobotWebSample1 <br/>
 (venv) $ python setup.py install <br/>
-$ deactivate <br/>
+(venv) $ deactivate <br/>
 
 you can use service daemon <br/>
 > $ sudo sh init.sh <br/>
