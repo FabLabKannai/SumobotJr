@@ -68,7 +68,7 @@ class ServoSpeed():
 
 # main
 print "start ServoSpeed"
-PIN = 15
+PIN = 12
 OFFSET = -18.0
 DEBUG = False
 servo = ServoSpeed(PIN)

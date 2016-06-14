@@ -1,8 +1,5 @@
-#!/usr/bin/python
-# Test for Sumobot
-# 2016-06-01 K.OHWADA @ FabLab Kannai
-# Behavior
-#   reft turn <-> stop <-> right turn
+# GPIO command
+# 2016-05-01 K.OHWADA @ FabLab Kannai
 
 import threading
 import time
@@ -42,12 +39,12 @@ class GpioController():
 	def __init__(self):
 		pass
 
-	def setPin(self, pin_led, pin_button, pin_servo_left, pin_servo_right):
+	def setPin(self, pin_led, pin_button, pin_left, pin_right):
 		self.pinLed = int(pin_led)
 		self.pinButton = int(pin_button)
-		self.servoLeft = ServoSpeed(pin_servo_left)
-		self.servoRight = ServoSpeed(pin_servo_right)
-		
+		self.servoLeft = ServoSpeed(pin_left)
+		self.servoRight = ServoSpeed(pin_right)
+
 	def setDebugPrint(self, flag):
 		self.servo.setDebugPrint(flag)
 
@@ -62,7 +59,7 @@ class GpioController():
 		self.ledThread = LedThread(self.pinLed)
 		self.ledThread.startRun()
 		self.ledThread.startBlink()
-#		self.wakeupServo()
+		self.wakeupServo()
 
 	def wakeupServo(self):
 		self.isRunServo = True
@@ -281,49 +278,3 @@ class ServoSpeed():
 		return pulse
 
 # end of class
-
-# main
-print "start sumobot turn"
-PIN_LED = 17 # con-pin 11
-PIN_BUTTON = 27 # con-pin 13
-PIN_LEFT = 12 # con-pin 32
-PIN_RIGHT = 13 # con-pin 33
-TIME_CHECK = 3 # 3 sec 
-TIME_INTERVAL = 0.1 # 0.1 sec
-MIN_SPEED = -100
-MAX_SPEED = 100
-
-gpio = GpioController()
-gpio.setPin(PIN_LED, PIN_BUTTON, PIN_LEFT, PIN_RIGHT)
-gpio.command("w")
-#time.sleep(TIME_CHECK) # wait to check
-#if gpio.getButtonStatus() != GpioController.BUTTON_ON:
-#	# exit this program, if pin is off
-#	print "exit sumobot turn"
-#	gpio.command("q")
-#	exit()
-
-speed = 0
-amount = 5
-gpio.wakeupServo()
-gpio.command("2")
-
-try:
-	# endless loop
-	while True:
-		gpio.changeSpeed(speed, speed)
-		speed = speed + amount;
-		if speed <= MIN_SPEED:
-			 or speed >= 100:
-			speed = MIN_SPEED 	
-			amount = -amount
-		elif speed >= MAX_SPEED:
-			speed = MAX_SPEED 	
-			amount = -amount
-		time.sleep(TIME_INTERVAL)
-except KeyboardInterrupt:
-	# exit the loop, if key Interrupt
-	pass
-
-gpio.quit()
-# end of main

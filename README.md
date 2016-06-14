@@ -35,6 +35,8 @@ Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <
 ### Raspberry Pi Prgaram
 - Sumobot Controller (daemon) <br/>
 Web app to control Sumobot <br/>
+- Sumobot Wii <br/>
+  Sumobot controlled by Wii Remote <br/>
 - sumobot turn <br/>
   reft turn <-> stop <-> right turn <br/>
 - sumobot command <br/>

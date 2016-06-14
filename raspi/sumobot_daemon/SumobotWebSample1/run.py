@@ -8,5 +8,5 @@ import sys
 basedir = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, os.path.join(basedir, "src"))
 
-import sumobot_sample
-sumobot_sample.main()
+import sumobot_web_sample_1
+sumobot_web_sample_1.main()

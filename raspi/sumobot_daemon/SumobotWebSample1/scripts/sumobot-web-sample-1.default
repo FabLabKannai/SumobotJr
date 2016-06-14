@@ -4,24 +4,24 @@
 # The init.d script will only run if this variable non-empty.
 SUMOBOT_USER=root
 
-# On what host to run daemon, default is 0.0.0.0
+# On what host to run daemon,
 HOST="0.0.0.0"
 
-# On what port to run daemon, default is 6010
+# On what port to run daemon,
 PORT=6010
 
-# On what left pin to run daemon, default is 15
-PIN_LEFT=15
-
-# On what right pin to run daemon, default is 16
-PIN_RIGHT=16
+# On what left pin to run daemon
+PIN_LED=17
+PIN_BUTTON=27
+PIN_LEFT=12
+PIN_RIGHT=13
 
 # Path to the OctoPrint executable, use this to override the default setting "/usr/bin/sumobot-web-sample"
 #DAEMON=/path/to/sumobot-web-sample/executable
-DAEMON=/home/pi/sumobot/venv/bin/sumobot_web_sample
+DAEMON=/home/pi/sumobot/venv/bin/sumobot_web_sample_1
 
 # What arguments to pass to sumobot-web-sample, usually no need to touch this
-DAEMON_ARGS="--host=$HOST --port=$PORT --pin_left=$PIN_LEFT --pin_right=$PIN_RIGHT"
+DAEMON_ARGS="--host=$HOST --port=$PORT --pin_led=$PIN_LED --pin_button=$PIN_BUTTON --pin_left=$PIN_LEFT --pin_right=$PIN_RIGHT"
 
 # Umask of files sumobot-web-sample generates, Change this to 000 if running sumobot-web-sample as its own, separate user
 UMASK=022

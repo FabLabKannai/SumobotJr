@@ -1,140 +1,303 @@
 #! /usr/bin/env python
 # Sumobot Command
 #   command specify forward, backward or etc
-# 2016-05-01 K.OHWADA @ FabLab Kannai
+# 2016-06-01 K.OHWADA @ FabLab Kannai
 
-import RPi.GPIO as GPIO
+import threading
+import time
+import wiringpi
 
 #
-# TwinServo class
+# GpioController
 #
 # Usage
+#    w : wakeup
+#    q : quit
+#    0 : LED Off
+#    1 : LED On
+#    2 : LED Blink
 #    f : forward
 #    b : backward
 #    l : left turn
 #    r : right turn
 #   othes : stop
 #
-class TwinServo():
-	OFFSET_L = -18.0
-	OFFSET_R = -18.0	
-	servo_l = None
-	servo_r = None
+#    speed : -100 - 0 - 100
+#
+class GpioController():
+	TIME_QUIT = 0.5  # 0.5 sec
+	BUTTON_NONE = -1
+	BUTTON_OFF = 0
+	BUTTON_ON = 1	
+	ledThread = None
+	servoLeft = None
+	servoRight = None		
+	pinLed = 0
+	pinButton = 0
+	isRun = False
+	isFirst = True
+	isRunServo = False
+	
+	def __init__(self):
+		pass
 
-	def __init__(self, pin_l, pin_r):
-		self.servo_l = ServoSpeed()
-		self.servo_r = ServoSpeed()
-		self.servo_l.setOffset(self.OFFSET_L)
-		self.servo_r.setOffset(self.OFFSET_R)
-		self.servo_l.setPinMode()
-#		self.servo_r.setPinMode()
-		self.servo_l.setPin(pin_l)
-		self.servo_r.setPin(pin_r)		
-		self.servo_l.start()
-		self.servo_r.start()
+	def setPin(self, pin_led, pin_button, pin_servo_left, pin_servo_right):
+		self.pinLed = int(pin_led)
+		self.pinButton = int(pin_button)
+		self.servoLeft = ServoSpeed(pin_servo_left)
+		self.servoRight = ServoSpeed(pin_servo_right)
+		
+	def setDebugPrint(self, flag):
+		self.servo.setDebugPrint(flag)
 
-	def change(self, speed_l, speed_r):
-		self.servo_l.change(speed_l)
-		self.servo_r.change(speed_r)
+	def wakeup(self):
+		if self.isFirst:
+			# setup, if first
+			self.isFirst = False
+			wiringpi.wiringPiSetupGpio()
+			wiringpi.pinMode(self.pinLed, wiringpi.OUTPUT)
+			wiringpi.pinMode(self.pinButton, wiringpi.INPUT)
+		self.quitLed()
+		self.ledThread = LedThread(self.pinLed)
+		self.ledThread.startRun()
+		self.ledThread.startBlink()
+		self.wakeupServo()
+
+	def wakeupServo(self):
+		self.isRunServo = True
+		self.servoLeft.setPinMode()
+		self.servoRight.setPinMode()
+		self.servoLeft.setPwm()
+#		self.servoRight.setPwm()
+		self.servoLeft.stop()
+		self.servoRight.stop()
+		
+	def quit(self):
+		self.quitLed()
+		self.quitSrervo()
+
+	def quitLed(self):
+		if self.ledThread:
+			# remove LED Thread
+			self.ledThread.stopBlink()
+			self.ledThread.stopRun()
+			time.sleep(self.TIME_QUIT)	
+			self.ledThread = None
+		wiringpi.digitalWrite(self.pinLed, wiringpi.LOW) 
+
+	def quitSrervo(self):
+		if self.isRunServo:
+			self.isRunServo = False
+			self.servoLeft.quit()
+			self.servoRight.quit()
 
 	def command(self, c):
-		if c == 'f':
-			self.change(100, -100)
+		if c == 'w':
+			if not self.isRun: 
+				# Wakeup, if not run
+				print 'Wakeup'
+				self.isRun = True
+				self.wakeup()
+		elif not self.isRun:
+			# nothing to do, if not run
+			return
+		elif c == 'q':
+			# Qiut
+			print 'Qiut'
+			self.isRun = False
+			self.quit()
+		elif c == '0':
+			# LED off
+			print 'LED off'
+			self.stopBlink()
+			wiringpi.digitalWrite(self.pinLed, wiringpi.LOW) 
+		elif c == '1':			
+			# LED on
+			print 'LED on'
+			self.stopBlink()
+			wiringpi.digitalWrite(self.pinLed, wiringpi.HIGH) 
+		elif c == '2':
+			# LED blink
+			print 'LED blink'
+			self.startBlink()
+		elif c == 'f':
+			# forward
+			print 'forward'
+			self.changeSpeed(100, -100)
 		elif c == 'b':
-			self.change(-100, 100)
+			# backward
+			print 'backward'
+			self.changeSpeed(-100, 100)
 		elif c == 'l':
-			self.change(-100, -100)
+			# left turn
+			print 'left turn'
+			self.changeSpeed(-100, -100)
 		elif c == 'r':
-			self.change(100, 100)
+			# right turn
+			print 'righ turn'
+			self.changeSpeed(100, 100)
 		else:
-			self.change(0, 0)
+			# stop
+			print 'stop'
+			self.changeSpeed(0, 0)
 
-	def stop(self):
-		self.servo_l.stop()
-		self.servo_r.stop()
-		self.servo_l.cleanupGpio()
-#		self.servo_r.cleanupGpio()
-							
+	def startBlink(self):
+		if self.ledThread:
+			self.ledThread.startBlink()
+
+	def stopBlink(self):
+		if self.ledThread:
+			self.ledThread.stopBlink()
+
+	def changeSpeed(self, speed_left, speed_right):
+		if self.isRun and self.isRunServo:
+			# excute, if run
+			self.servoLeft.change(speed_left)
+			self.servoRight.change(speed_right)
+
+	def getButtonStatus(self):
+		ret = self.BUTTON_NONE
+		if self.isRun:
+			# excute, if run
+			val = wiringpi.digitalRead(self.pinButton)
+			ret = self.BUTTON_ON if val == wiringpi.HIGH else self.BUTTON_OFF
+		return ret		
+		
+# end of class
+
+#
+# LED Thread class for blink
+# 
+class LedThread(threading.Thread):
+	TIME_BLINK = 1.0  # 1 sec
+	TIME_SLEEP = 0.1 # 0.1 sec
+	MAX_CNT = int( TIME_BLINK / TIME_SLEEP )
+	pin = 0
+	isRun = False
+	isBlink = False
+	isStatus = False
+
+	def __init__(self, pin):
+		super(LedThread, self).__init__()
+		self.pin = pin
+
+	def startRun(self):
+		self.isRun = True
+		self.start()
+
+	def stopRun(self):
+		self.isRun = False
+		
+	def startBlink(self):
+		self.isBlink = True
+
+	def stopBlink(self):
+		self.isBlink = False
+
+	# run when isRun is true
+	def run(self):
+		cnt = 0
+		while self.isRun:
+			cnt += 1
+			if cnt >= self.MAX_CNT:
+				# every one second
+				cnt = 0
+				self.blink()
+			time.sleep(self.TIME_SLEEP)
+
+	# blink LED when isBlink is true
+	def blink(self):
+		if self.isBlink:
+			self.isStatus = not self.isStatus
+			wiringpi.digitalWrite(self.pin, self.isStatus)
+
 # end of class
 
 #
 # ServoSpeed
 #
-# Servo: SpringRC SM-S4303R
-#   -100 : clokckwide full-speed
+# speed
+#   -100 : clockwide full speed
 #   0 : stop
-#   100 : anticlokckwide full-speed
+#   100 : anticlockwide full speed
 #
 class ServoSpeed():
-	FREQ = 50 # 50 Hz (20 ms)
-	DUTY_STOP = 7.5 # 1.5ms / 20ms
-	COEF = 0.025 # 2.5 / 100
+	# PWM base clock 19.2 MHz
+	# PWM clock 200 KHz
+	CLOCK = 96 # 96 = 19.2 MHz / 200 KHz
+	RANGE = 4000 # 20ms * 200 KHz
+	PULSE_STOP = 300 # 1.5ms  * 200 KHz
+	COEF = 1.0 # 0.5ms  * 200 KHz / 100
 	MIN_SPEED = -100
 	STOP_SPEED = 0
-	MAX_SPEED = 100	
-	servo = None
+	MAX_SPEED = 100
 	pin = 0
-	debugPrint = False
-	dutyOffset = 0
+	isDebugPrint = False
+	pulseOffset = 0
 
-	def __init__(self):
-		pass
+	def __init__(self, pin):
+		self.pin = int(pin)
 
 	def setDebugPrint(self, debug):
-		self.debugPrint = bool(debug)
+		self.isDebugPrint = bool(debug)
 
 	def setOffset(self, offset):
-		self.dutyOffset = self.COEF * float(offset)
+		self.pulseOffset = self.COEF * float(offset)
+		if self.isDebugPrint: 
+			print "offset; " + str(offset) + " -> " + str(self.pulseOffset)
+
+	def setupGpio(self):
+		wiringpi.wiringPiSetupGpio()
 
 	def setPinMode(self):
-		GPIO.setmode(GPIO.BOARD)
-
-	def setPin(self, pin):
-		self.pin = int(pin)
-		GPIO.setup(self.pin, GPIO.OUT)
-
-	def start(self):
-		self.servo = GPIO.PWM(self.pin, self.FREQ)
-		duty = self.calcDuty(0)
-		self.servo.start(duty)
+		wiringpi.pinMode(self.pin, wiringpi.PWM_OUTPUT)
+	
+	def setPwm(self):
+		wiringpi.pwmSetMode(wiringpi.PWM_MODE_MS)
+		wiringpi.pwmSetClock(self.CLOCK)
+		wiringpi.pwmSetRange(self.RANGE)
 
 	def stop(self):
-		self.servo.stop()
-
-	def cleanupGpio(self):
-		GPIO.cleanup()
+		self.change(0) # stop
 		
-	def change(self, speed):
-		duty = self.calcDuty(speed)
-		self.servo.ChangeDutyCycle(duty)
+	def quit(self):
+		wiringpi.pwmWrite(self.pin, 0) # no pluse
 
-	def calcDuty(self, speed):
-		# -100 -> 5.0
-		# 0 -> 7.5
-		# 100 -> 10.0
+	def change(self, speed):
+		pulse = self.calcPulse(speed)
+		wiringpi.pwmWrite(self.pin, pulse)
+
+	def calcPulse(self, speed):
+		# -100 -> 200
+		# 0 -> 300
+		# 100 -> 400
 		speed = float(speed)
 		if speed < self.MIN_SPEED: speed = self.MIN_SPEED
 		if speed > self.MAX_SPEED: speed = self.MAX_SPEED
-		duty = self.DUTY_STOP + self.dutyOffset + self.COEF * speed
-		if self.debugPrint: print duty
-		return duty
-		
+		pulse = int( self.PULSE_STOP + self.pulseOffset + self.COEF * speed )
+		if self.isDebugPrint: 
+			print str(speed) + " -> " + str(pulse)
+		return pulse
+
 # end of class
 
 # main
-PIN_L = 15
-PIN_R = 16
-servo = TwinServo(PIN_L, PIN_R)
+PIN_LED = 17 # con-pin 11
+PIN_BUTTON = 27 # con-pin 13
+PIN_LEFT = 12 # con-pin 32
+PIN_RIGHT = 13 # con-pin 33
+gpio = GpioController()
+gpio.setPin(PIN_LED, PIN_BUTTON, PIN_LEFT, PIN_RIGHT)
 
 try:
 	# endless loop
 	while True:
 		# wait to enter command
 		c = raw_input('> ')
-		servo.command(c)
+		gpio.command(c)
 except KeyboardInterrupt:
 	# exit the loop, if key Interrupt
 	pass
 
-servo.stop()
+gpio.quit()
 # end of main

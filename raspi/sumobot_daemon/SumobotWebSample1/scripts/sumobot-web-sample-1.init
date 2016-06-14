@@ -2,7 +2,7 @@
 # 2016-05-01 K.OHWADA @ FabLab Kannai
 
 ### BEGIN INIT INFO
-# Provides:          sumobot-web-sample
+# Provides:          sumobot-web-sample-1
 # Required-Start:    $local_fs networking
 # Required-Stop:
 # Should-Start:
@@ -11,21 +11,21 @@
 # Default-Stop:      0 1 6
 # Short-Description: Sumobot Web daemon
 # Description:       Starts the Sumobot daemon with the user specified in
-#                    /etc/default/sumobot-web-sample.
+#                    /etc/default/sumobot-web-sample-1.
 ### END INIT INFO
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DESC="Sumobot Web Daemon"
-NAME="Sumobot Web Sample"
-#DAEMON=/usr/local/bin/sumobot-web-sample
-PIDFILE=/var/run/sumobot-web-sample.pid
-PKGNAME=sumobot-web-sample
+NAME="Sumobot Web Sample 1"
+#DAEMON=/usr/local/bin/sumobot-web-sample-1
+PIDFILE=/var/run/sumobot-web-sample-1.pid
+PKGNAME=sumobot-web-sample-1
 SCRIPTNAME=/etc/init.d/$PKGNAME
 
 # Read configuration variable file if it is present
 [ -r /etc/default/$PKGNAME ] && . /etc/default/$PKGNAME
 
-# Exit if the sumobot-web-sample is not installed
+# Exit if the sumobot-web-sample-1 is not installed
 [ -x "$DAEMON" ] || exit 0
 
 # Load the VERBOSE setting and other rcS variables

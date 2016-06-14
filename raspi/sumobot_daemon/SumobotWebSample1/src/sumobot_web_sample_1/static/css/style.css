@@ -1,0 +1,25 @@
+/*
+ * style.css
+ * 2016-05-01 K.OHWADA @ FabLab Kannai
+ */
+
+#body{
+    background-color:#ffffff; 
+    padding: 0px;
+    margin: 10px 10px 10px 10px;
+    -webkit-user-select:none;
+}
+
+#gpio_wakeup {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #0000ff;  // blue
+}
+
+#gpio_quit {
+    font-size: 120%;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #ff0000;  // red
+}

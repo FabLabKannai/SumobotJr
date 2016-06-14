@@ -14,7 +14,7 @@ import sumobot_setuptools
 # Requirements for our application
 INSTALL_REQUIRES = [
    "flask>=0.10",
-   "RPi.GPIO>=0.6.2"
+   "wiringpi>=2.32.1"
 ]
 
 # Additional requirements for setup
@@ -28,7 +28,7 @@ EXTRA_REQUIRES = dict()
 
 # general setup configuration
 def params():
-    name ="SumobotWebSample"
+    name ="SumobotWebSample1"
     version ="0.1"
     description ="Sumobot Controller for Raspberry Pi 2"
 
@@ -66,7 +66,7 @@ def params():
        "":"src"
     }
     package_data = {
-       "sumobot_web_sample": sumobot_setuptools.package_data_dirs("src/sumobot_web_sample", ["static", "templates"])
+       "sumobot_web_sample_1": sumobot_setuptools.package_data_dirs("src/sumobot_web_sample_1", ["static", "templates"])
     }
 
     include_package_data = True
@@ -80,7 +80,7 @@ def params():
 
     entry_points = {
         "console_scripts": [
-            "sumobot_web_sample = sumobot_web_sample:main"
+            "sumobot_web_sample_1 = sumobot_web_sample_1:main"
         ]
     }
 

@@ -1,23 +1,34 @@
-<html>
+<!DOCTYPE html>
 <!-- 2016-05-01 K.OHWADA @ FabLab Kannai -->
+<html>
 <head>
 <title>Sumobot</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<!-- jQuery -->
 <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<!-- stylesheet -->
+<link rel="stylesheet" href="/static/css/style.css" />
 <script type="text/javascript">
 // post method
-function post(val){
+function post(value){
 	var data = {
-		"command": val
+	    	"type": "gpio",
+		"value": value
 	};
 	$.post("/action", data);
 }
 </script>
 </head>
-<body>
+<body id="body">
+<div align="center">
 <h1>Sumobot Controller</h1>
 <!-- post begin -->
-<button type="button" onClick="post('w');" >Wakeup</button><br/>
-<button type="button" onClick="post('q');" >Quit</button><br/>
+<div>
+	<button type="button" id="gpio_wakeup" onClick="post('w');" >Wakeup</button> &nbsp;
+	<button type="button" id="gpio_quit" onClick="post('q');" >Quit</button><br/>
+</div>
+<br/>
 <table>
 <!-- 1st row -->
 <tr><td></td>
@@ -33,5 +44,6 @@ function post(val){
 <td></td></tr>
 </table>
 <!-- post end -->
+</div>
 </body>
 </html>
