@@ -12,8 +12,8 @@ Sumobot run, if pin is low. <br/>
 Program stop, and Sumobot is stopped, if pin is high. <br/>
 
 ### Install libraly
-$ sudo apt-get install --no-install-recommends bluetooth
-$ sudo apt-get install python-cwiid
+> $ sudo apt-get install --no-install-recommends bluetooth <br/>
+> $ sudo apt-get install python-cwiid <br/>
 
 ### Usage
 **Connnect** <br/>
