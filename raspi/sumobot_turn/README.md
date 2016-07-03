@@ -47,7 +47,7 @@ Revert to the original /etc/rc.local
 Put a 10k resistor between P13(GPIO 27) and P17(3.3V).  <br/>
 Sumobot will run endless. <br/>
 Sumobot will be stopped, when connect to P20(GND) in place of the P17(3.3v).   <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_circuit_p18.png" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_circuit_p13.png" width="300" /> <br/>
 
 ### Blog (Japanese)
 http://android.ohwada.jp/archives/6819

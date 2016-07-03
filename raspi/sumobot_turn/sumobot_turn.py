@@ -314,7 +314,6 @@ try:
 		gpio.changeSpeed(speed, speed)
 		speed = speed + amount;
 		if speed <= MIN_SPEED:
-			 or speed >= 100:
 			speed = MIN_SPEED 	
 			amount = -amount
 		elif speed >= MAX_SPEED:
