@@ -64,5 +64,5 @@ $ sudo chmod 755 /etc/rc.local   <br/>
 
 ### Hardwear setup
 Put LED and a 330 ohms resistor between P11(GPIO 17) and P9(GND).  <br/>
-Put a 10k ohms resistor between P13(GPIO 27) and P20(GND).  <br/>
+Put a 10k ohms resistor between P13(GPIO 27) and P14(GND).  <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_circuit_led_p13.png" width="300" /> <br/>
