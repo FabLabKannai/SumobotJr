@@ -63,5 +63,6 @@ $ sudo cp -f rc.local.sumobot_wii /etc/rc.local   <br/>
 $ sudo chmod 755 /etc/rc.local   <br/>
 
 ### Hardwear setup
-for sumobot_wii_remote_check.py <br/> 
-Put a 10k resistor between P13(GPIO 27) and P20(GND).  <br/>
+Put LED and a 330 ohms resistor between P11(GPIO 17) and P9(GND).  <br/>
+Put a 10k ohms resistor between P13(GPIO 27) and P20(GND).  <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_circuit_p13.png" width="300" /> <br/>
