@@ -1,7 +1,7 @@
-Sumobot Web Sample
+Sumobot Web Sample 1
 ===============
 
-Web app to control Sumobot with button <br/>
+Web app to control Sumobot <br/>
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ### Requirements
@@ -16,7 +16,7 @@ $ sudo pip install virtualenv <br/>
 > $ cd /tmp<br/>
 $ git clone https://github.com/FabLabKannai/SumobotJr.git <br/>
 $ mkdir ~/sumobot/ <br/>
-$ mv SumobotJr/raspi/sumobot_daemon/SumobotWebSample1/ ~/sumobot/ <br/>
+$ mv SumobotJr/raspi/sumobot_web/SumobotWebSample1/ ~/sumobot/ <br/>
 
 > $ cd ~/sumobot <br/>
 $ virtualenv venv <br/>

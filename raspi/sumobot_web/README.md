@@ -2,6 +2,6 @@
 
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
-## Prgarams
+## Sumobot Web
 - Sumobot Web Sample 1 <br/>
-  web app to control Sumobot with button <br/>
+  Web app to control Sumobot <br/>

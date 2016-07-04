@@ -3,8 +3,8 @@
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ## Prgarams
-- Sumobot daemon <br/>
-  web app to control Sumobot <br/>
+- Sumobot web <br/>
+  Web app to control Sumobot <br/>
 - Sumobot Wii <br/>
   Sumobot controlled by Wii Remote <br/>
 - sumobot turn <br/>
