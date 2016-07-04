@@ -2,8 +2,7 @@ Sumobot Web Sample 1
 ===============
 
 Web app to control Sumobot <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_sumobot_web_sample_1.png" width="300" /> <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="200" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_sumobot_web_sample_1.png" width="300" /> <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
 ### Requirements
 - OS: Raspbian <br/>
