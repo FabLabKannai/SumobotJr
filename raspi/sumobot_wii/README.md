@@ -15,8 +15,17 @@ Program stop, and Sumobot is stopped, if pin is high. <br/>
 > $ sudo apt-get install --no-install-recommends bluetooth <br/>
 > $ sudo apt-get install python-cwiid <br/>
 
+### Install sumobot wii
+> $ cd /tmp <br/>
+> $ git clone https://github.com/FabLabKannai/SumobotJr.git <br/> 
+> $ mkdir ~/sumobot/ <br/>
+> $ cp SumobotJr/raspi/sumobot_wii/sumobot_wii_remote.py ~/sumobot/ <br/>
+
 ### Usage
+
 **Connnect** <br/>
+Rapberry Pi is bootted. <br/>
+and after about three minutes, LED will be trun on. <br/>
 push 1 and 2, when LED on. <br/>
 
 **Quit** <br/>
@@ -34,7 +43,7 @@ the arrow keys  <br/>
 - 1 : LED blink <br/>
 - others : nothing <br/>
 
-### Start Automatically
+### Start Automatically 1
 Set to start this program, when the power is turned on. <br/>
 Change /etc/rc.local <br/>
 Add one line before "exit 0" <br/>
@@ -42,8 +51,15 @@ Add one line before "exit 0" <br/>
 $ sudo nano /etc/rc.local <br/>
 ... <br/>
 \# add <br/>
-python /home/pi/sumobot/sumobot_wii_remote_check.py <br/>
+python /home/pi/sumobot/sumobot_wii_remote.py & <br/>
 exit 0  <br/>
 
+### Start Automatically 2
+$ cd /tmp/SumobotJr/raspi/sumobot_turn/ 
+$ sudo cp -p /etc/rc.local /etc/rc.local.orig 
+$ sudo cp -f rc.local.sumobot_wii /etc/rc.local 
+$ sudo chmod 755 /etc/rc.local 
+
 ### Hardwear setup
+for sumobot_wii_remote_check.py <br/> 
 Put a 10k resistor between P13(GPIO 27) and P20(GND).  <br/>
