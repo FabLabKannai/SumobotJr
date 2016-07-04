@@ -42,4 +42,9 @@ or service daemon <br/>
 
 ### Usage
 Access using web browser. <br/>
-http://rasoberrypi.local:6010/ <br/>
+http://raspberrypi.local:6010/ <br/>
+
+Firstly, click "wakeup" button. <br/>
+Sumobot go forward or backward, when click arrow icon. <br/>
+Finally, quit controller, when click "quit" button. <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_sumobot_web_sample_1.png" width="200" /> <br/>

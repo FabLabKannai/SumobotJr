@@ -1,4 +1,4 @@
-# sumobot deamon - Raspberry Pi Prgaram
+# sumobot web - Raspberry Pi Prgaram
 
 <img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
 
