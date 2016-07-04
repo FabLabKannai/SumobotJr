@@ -55,6 +55,7 @@ python /home/pi/sumobot/sumobot_wii_remote.py & <br/>
 exit 0  <br/>
 
 ### Start Automatically 2
+Alternative to change /etc/rc.local <br/>
 > $ cd /tmp/SumobotJr/raspi/sumobot_turn/  <br/> 
 $ sudo cp -p /etc/rc.local /etc/rc.local.orig   <br/>
 $ sudo cp -f rc.local.sumobot_wii /etc/rc.local   <br/>
