@@ -24,9 +24,10 @@ Program stop, and Sumobot is stopped, if pin is high. <br/>
 ### Usage
 
 **Connnect** <br/>
-Rapberry Pi is bootted. <br/>
+RaspberryPi is bootted. <br/>
 and after about three minutes, LED will be trun on. <br/>
 push 1 and 2, when LED on. <br/>
+come to light vibration, when connect wii remote to RaspberryPi. <br/>
 
 **Quit** <br/>
 push +(plus) and -(minus) <br/>
