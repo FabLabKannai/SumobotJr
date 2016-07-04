@@ -12,9 +12,5 @@
   Video [Sumobot with Raspberry Pi](https://www.youtube.com/watch?v=J9WRliGs7vI) <br/>
 - sumobot command <br/>
   command specify forward, backward or etc <br/>
-- servo duty <br/>
-  command specify duty <br/>
-- servo speed <br/>
-  command specify speed <br/>
-- servo fade <br/>
-  clockwide <-> stop <-> anticlockwide <br/>
+- [WiringPi Servo](https://github.com/FabLabKannai/RaspiStudy/tree/master/4_python/sample/wiringpi_servo) <br/>
+   test for Continuous Rotation Servo <br/> 
