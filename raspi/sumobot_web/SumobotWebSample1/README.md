@@ -2,7 +2,8 @@ Sumobot Web Sample 1
 ===============
 
 Web app to control Sumobot <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_sumobot_web_sample_1.png" width="300" /> <br/>
+<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi_ver.jpg" width="200" /> <br/>
 
 ### Requirements
 - OS: Raspbian <br/>
@@ -47,4 +48,3 @@ http://raspberrypi.local:6010/ <br/>
 Firstly, click "wakeup" button. <br/>
 Sumobot go forward or backward, when click arrow icon. <br/>
 Finally, quit controller, when click "quit" button. <br/>
-<img src="https://github.com/FabLabKannai/SumobotJr/blob/master/docs/raspi/raspi_sumobot_web_sample_1.png" width="200" /> <br/>
