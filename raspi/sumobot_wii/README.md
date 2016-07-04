@@ -56,7 +56,7 @@ exit 0  <br/>
 
 ### Start Automatically 2
 Alternative to change /etc/rc.local <br/>
-> $ cd /tmp/SumobotJr/raspi/sumobot_turn/  <br/> 
+> $ cd /tmp/SumobotJr/raspi/sumobot_wii/  <br/> 
 $ sudo cp -p /etc/rc.local /etc/rc.local.orig   <br/>
 $ sudo cp -f rc.local.sumobot_wii /etc/rc.local   <br/>
 $ sudo chmod 755 /etc/rc.local   <br/>
