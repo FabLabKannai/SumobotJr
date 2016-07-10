@@ -20,6 +20,6 @@ fi
 # 2016-05-01
 # python /home/pi/sumobot/sumobot_turn_check.py
 # 2016-06-01
-python /home/pi/sumobot/sumobot_wii.py &
+python /home/pi/sumobot/sumobot_wii_remote.py &
 
 exit 0
