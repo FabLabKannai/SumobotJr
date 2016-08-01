@@ -17,7 +17,7 @@ Correspondence of image and message.
 ### Requrement
 - [py-scratch](https://code.google.com/archive/p/py-scratch/)
 
-### setup
+### Setup
 copy "sumobot.sb" under directory /home/pi/Scrach/ <br/>
 copy "sumobot_scrach.py" under directory /home/pi/sumobot/ <br/>
 
@@ -34,3 +34,6 @@ file -> open -> sumobot.sb <br/>
 sudo python sumobot_scrach.py <br/> 
 
 (6) click image on Scrach
+
+### Blog (Japanese)
+http://android.ohwada.jp/archives/7152
