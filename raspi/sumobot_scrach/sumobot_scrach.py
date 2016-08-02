@@ -314,7 +314,6 @@ s = scratch.Scratch()
 print "connected"
 gpio.wakeupServo()
 gpio.command('2')
-cnt = 0
 
 # endless loop
 try:
