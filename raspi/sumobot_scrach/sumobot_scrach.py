@@ -309,9 +309,10 @@ gpio.wakeup()
 # connect
 print "connecting..."
 s = scratch.Scratch() 
-print "connected"
 
-# blink
+# connected
+print "connected"
+gpio.wakeupServo()
 gpio.command('2')
 cnt = 0
 
