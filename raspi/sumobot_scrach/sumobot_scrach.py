@@ -320,11 +320,13 @@ try:
 	while True:
 		# receive from scratch
 		obj = s.receive()
-		cmd = obj["broadcast"][0]
-		gpio.command(cmd)
-		# stop after 3 sec
-		t = threading.Timer(3, stop)
-		t.start()
+		if len(obj["broadcast"]) > 0:
+			# broadcast command
+			cmd = obj["broadcast"][0]
+			gpio.command(cmd)
+			# stop after 3 sec
+			t = threading.Timer(3, stop)
+			t.start()
 except KeyboardInterrupt:
 	pass
 # end of loop
